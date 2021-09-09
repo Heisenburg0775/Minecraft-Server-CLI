@@ -14,7 +14,7 @@ npm install -g minecraft-server-cli
 minecraftserv
 ```
 ## Support
-### [Homepage](https://github.com/hitontwo2/Minecraft-Server-CLI/blob/master/README.md)
+### [Homepage](https://github.com/hitontwo2/Minecraft-Server-CLI/tree/master)
 ### [Issues Page]()
 
 ## Note

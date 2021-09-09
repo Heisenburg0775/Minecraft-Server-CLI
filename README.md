@@ -15,7 +15,7 @@ minecraftserv
 ```
 ## Support
 ### [Homepage](https://github.com/hitontwo2/Minecraft-Server-CLI/tree/master)
-### [Issues Page]()
+### [Issues Page](https://github.com/hitontwo2/Minecraft-Server-CLI/issues)
 
 ## Note
 ### This package is currently first vesion

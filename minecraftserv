@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+const fetch = require("node-fetch");
+const box = require("boxen")
+const chalk = require("chalk");
+const boxen = require("boxen");
+
+const hostname = process.argv[2]
+function HostPing(name){
+    const info =fetch(`https://eu.mc-api.net/v3/server/ping/${name}`)
+    .then(res => res.json())
+
+    info.then(function(result){
+        console.log(boxen(chalk.green("Server Online: ") + result.online + "\n" + chalk.green("Server Ping(In MS): ") + chalk.yellow(result.took) + "\n" + chalk.green("Server Icon: ") + result.favicon + "\n" + chalk.green("Version: ") + result.version.name + "\n" + chalk.green("Protocol: ") + result.version.protocol + "\n" + chalk.green("Players: ") + result.players.online + chalk.red("/") + result.players.max + "\n" + chalk.green("Server Description: ") + result.description + "\n" + chalk.green("Pinged host at: ") + result.fetch,{borderColor:"blue", borderStyle:"round"}))   })}
+HostPing(hostname)
+
